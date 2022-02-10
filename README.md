@@ -1,17 +1,19 @@
-<<<<<<< HEAD
-# UD-Transactions
-A Really simple DApp to get a user's recent transactions info from their address incorporating the use of Unstoppable Domains login feature.
 
-This project is a submission for the [Unstoppable Domains](https://gitcoin.co/issue/unstoppabledomains/gitcoin-bounties/1/100027208) Gitcoin GR12 hackathon.
+# Gini Index Calculator
+
+# Gini Index Calculator
+A Really simple DApp to calculate the Gini Index of a DAO using the DAO's token address making the use of Unstoppable Domains login feature.
+
+This project is a submission for the [Unstoppable Domains](https://gitcoin.co/issue/unstoppabledomains/gitcoin-bounties/4/100027487) Schelling Point Gitcoin hackathon.
 
 # Project Repo
-You can find it [here](https://github.com/Calm-Rock/ud-transactions)
+You can find it [here](https://github.com/Calm-Rock/ud-gini-index)
 
 # Video Demo
 A video demo of the app can be found [here](https://youtu.be/-LQk7HozBos)
 
 # Live Website
-You can find a live version of the webapp [here](https://ud-transactions.vercel.app)
+You can find a live version of the webapp [here](https://ud-gini-index.vercel.app/)
 
 # Contact info
 **Discord** : Cheeto.da#0105 <br>
@@ -36,7 +38,6 @@ REACT_APP_UAUTH_CLIENT_ID=
 REACT_APP_UAUTH_CLIENT_SECRET=
 REACT_APP_UAUTH_REDIRECT_URI=
 REACT_APP_UAUTH_LOGOUT_REDIRECT_URI=
-REACT_APP_ETHPLORER_API_KEY=
 ```
 4. Run the local development environment
 ```
@@ -44,10 +45,6 @@ npm start
 ```
 It should open up the localhost window in the browser.
 
-A cool feature that I'd like to include in the future version of the DApp would be to throw out the [Gini-Coefficient](https://en.wikipedia.org/wiki/Gini_coefficient) values for all the tokens that a user holds.
+Further imporvements would be to improve the UI a bit more and integrate it with a bigger DAO tool
 
 Hope you like it ❤️
-=======
-# Gini Index Calculator
-
->>>>>>> 7f0219282f288c2b84b6039ac9fadeecb6e914a0
