@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UD-Transactions
 A Really simple DApp to get a user's recent transactions info from their address incorporating the use of Unstoppable Domains login feature.
 
@@ -46,3 +47,7 @@ It should open up the localhost window in the browser.
 A cool feature that I'd like to include in the future version of the DApp would be to throw out the [Gini-Coefficient](https://en.wikipedia.org/wiki/Gini_coefficient) values for all the tokens that a user holds.
 
 Hope you like it ❤️
+=======
+# Gini Index Calculator
+
+>>>>>>> 7f0219282f288c2b84b6039ac9fadeecb6e914a0
