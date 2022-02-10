@@ -10,7 +10,7 @@ This project is a submission for the [Unstoppable Domains](https://gitcoin.co/is
 You can find it [here](https://github.com/Calm-Rock/ud-gini-index)
 
 # Video Demo
-A video demo of the app can be found [here](https://youtu.be/-LQk7HozBos)
+A video demo of the app can be found [here](https://youtu.be/9fYWNNhJKRU)
 
 # Live Website
 You can find a live version of the webapp [here](https://ud-gini-index.vercel.app/)
