@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import uauth from "./uauth";
 
-const SearchBar = () => {
+const SearchBar = ({ setAuth }) => {
   const navigate = useNavigate();
   const [token, setToken] = useState("");
   const [tokenInfo, setTokenInfo] = useState("");
@@ -35,6 +36,18 @@ const SearchBar = () => {
     setTokenInfo("");
     setToken("");
   };
+
+  const handleLogout = async () => {
+    try {
+      await uauth?.logout();
+      // setUser(undefined);
+      setAuth(false);
+      return navigate("/login");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   if (tokenInfo == "") {
     return (
       <>
@@ -80,7 +93,8 @@ const SearchBar = () => {
             </div>
             <div className="relative block rounded-full py-8 flex items-center w-auto justify-center">
               <div className="overflow-hidden h-auto w-5/6 px-8 text-xl rounded-full z-0 tracking-wide text-center text-white focus:shadow focus:outline-none md:text-3xl md:w-8/12 md:p-8 md:overflow-visible">
-                Gini Index of the Token {token} is <br/><i>{tokenInfo}</i>
+                Gini Index of the Token {token} is <br />
+                <i>{tokenInfo}</i>
               </div>
             </div>
             <button
@@ -97,5 +111,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-
-

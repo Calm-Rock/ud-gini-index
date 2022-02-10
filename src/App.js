@@ -11,13 +11,16 @@ import SearchBar from "./Components/SearchBar.js";
 import MetaLogin from "./Components/MetaLogin.js";
 
 const App = () => {
-  const [auth, setAuth] = useState(true);
+  const [auth, setAuth] = useState(false);
 
   //route setting
   let allowedRoutes = (
     <Routes>
       <Route path="/" element={<Navigate replace to="/login" />} />
-      <Route path="/login" element={<MetaLogin auth={auth} setAuth={setAuth}/>} />
+      <Route
+        path="/login"
+        element={<MetaLogin auth={auth} setAuth={setAuth} />}
+      />
       <Route path="*" element={<div>Not found</div>} />
     </Routes>
   );
@@ -26,8 +29,8 @@ const App = () => {
     allowedRoutes = (
       <Routes>
         <Route path="/" element={<Navigate replace to="/login" />} />
-        <Route path="/app" element={<SearchBar />} />
-        <Route path="/login" element={<MetaLogin />} />
+        <Route path="/callback" element={<SearchBar setAuth={setAuth} />} />
+        <Route path="/login" element={<MetaLogin setAuth={setAuth} />} />
         <Route path="*" element={<div>Not found</div>} />
       </Routes>
     );
